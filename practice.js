@@ -6,25 +6,38 @@ export function setupPractice (element) {
   // du ska kunna förklara vad, hur varför PM
 
   // Samtliga delar finns förklarade/beskrivna https://webbutveckling.jensa.dev/tekniker/javascript/
+
   varsAndTypes(element)
   operators(element)
+  /*
   controlStructures(element)
   arraysAndObjects(element)
   domAndEvents(element)
-  domManipulation(element)
+  domManipulation(element)*/
 }
 
 // du kan använda kontrollstrukturer och variabler etc. i 
 // andra moment än där funktionen heter så såklart
-function varsAndTypes(element) {
-  // kod för att visa vad du lärt dig om variabler och typer
-  let varsAndTypes = 'varsAndTypes'
-  console.log(varsAndTypes, typeof(varsAndTypes))
+function varsAndTypes(element){
+    
+  var wow;
+  let x = Math.ceil(Math.random() * 100);
+  wow = document.createElement("div");
+  wow.textContent = x;
+  element.appendChild(wow)
 }
 
 function operators(element) {
-  // kod för att visa vad du lärt dig om operatorer
-  console.log('operators === ', 1 === 1)
+  // console.log(wow): "wow is not defined" 
+  //              :(
+  // Jag får inte använda min var :(
+  // if(parseInt(wow.textContent) > 50)
+  if(parseInt(element.children[0].textContent) > 50){
+    let newElement = document.createElement("h1");
+    newElement.textContent = "Talet är större än 50!!!"
+    element.appendChild(newElement)
+  }
+
 }
 
 function controlStructures(element) {
