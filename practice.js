@@ -9,8 +9,8 @@ export function setupPractice (element) {
 
   varsAndTypes(element)
   operators(element)
-  /*
   controlStructures(element)
+  /*
   arraysAndObjects(element)
   domAndEvents(element)
   domManipulation(element)*/
@@ -24,27 +24,35 @@ function varsAndTypes(element){
   let x = Math.ceil(Math.random() * 100);
   wow = document.createElement("div");
   wow.textContent = x;
-  element.appendChild(wow)
+  element.appendChild(wow);
+  // spenderade tid i webbläsaren för att lista ut hur dom fungerade
 }
 
 function operators(element) {
   // console.log(wow): "wow is not defined" 
   //              :(
   // Jag får inte använda min var :(
-  // if(parseInt(wow.textContent) > 50)
+  // if(parseInt(wow.textContent) > 50);
   if(parseInt(element.children[0].textContent) > 50){
     let newElement = document.createElement("h1");
-    newElement.textContent = "Talet är större än 50!!!"
-    element.appendChild(newElement)
+    newElement.textContent = "Talet är större än 50";
+    element.appendChild(newElement);
   }
-
 }
 
 function controlStructures(element) {
-  // kod för att visa vad du lärt dig om kontrollstrukturer
-  // if och loopar
-  let controlStructures = 'controlStructures'
-  console.log(controlStructures, controlStructures ? 'if' : 'loopar')
+   
+  if(parseInt(element.children[0].textContent) > 50){
+    let x = 50
+    while(true){
+      if(x < parseInt(element.children[0].textContent)){
+        element.children[1].textContent += "!";
+        console.log(x)
+        x++
+      }
+      else break;
+    }
+  }
 }
 
 function arraysAndObjects (element) {
