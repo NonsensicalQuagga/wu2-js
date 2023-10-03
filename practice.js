@@ -72,6 +72,15 @@ function arraysAndObjects(element) {
     numbers.push(i)
   }
   console.log(numbers)
+  let coolElement ={
+    type: "semantik", 
+    text: "wow",
+    display: "grid"
+  }
+  let newElement = document.createElement(coolElement.type);
+  newElement.textContent = coolElement.text
+  newElement.style.display = coolElement.display;
+  element.appendChild(newElement);
 }
 
 function domAndEvents(element) {
