@@ -1,19 +1,19 @@
 # PM Webbprojekt
 
-Författare och datum.
+Alvin Högdal  2023-10-03
 
 ## Vad
 
-Här beskriver du kortfattat vad du har arbetat med.
+Skriva kod som uppnår vissa krav.
 
 ## Hur
 
-Här beskriver du hur du har arbetat med projektet. Vilka verktyg och metoder har du använt.
+Skriva en liten bit kod som via dom ändrar vad som står på skärmen.
 
 ## Positiva erfarenheter
 
-Här beskriver du vad som har gått bra i ditt projekt och analyserar varför. Hur ska du upprepa framgångarna.
+consolen i webbläsaren är vra för att lista ut hur saker interagerar med varandra.
 
 ## Negativa erfarenheter
 
-Här beskriver du det som du anser har gått mindre bra med ditt projekt och analyserar hur du kan undvika detta i framtida projekt.
+var är hemskt.
