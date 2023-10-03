@@ -10,8 +10,8 @@ export function setupPractice (element) {
   varsAndTypes(element)
   operators(element)
   controlStructures(element)
-  /*
   arraysAndObjects(element)
+  /*
   domAndEvents(element)
   domManipulation(element)*/
 }
@@ -41,18 +41,27 @@ function operators(element) {
 }
 
 function controlStructures(element) {
-   
-  if(parseInt(element.children[0].textContent) > 50){
-    let x = 50
+ console.log(yeet);
+  try{
+    console.log(element.children[1].textContent);
     while(true){
-      if(x < parseInt(element.children[0].textContent)){
+      try{
+        if (yeet === undefined) pog;
+      if(yeet < parseInt(element.children[0].textContent)){
         element.children[1].textContent += "!";
-        console.log(x)
-        x++
+        yeet++
       }
-      else break;
+      else break;}
+      catch(error){
+        var yeet = 50;}
     }
+    }
+  catch(error){
+    let bad = document.createElement("h1");
+    bad.textContent = "SÄMST";
+    element.appendChild(bad)
   }
+  
 }
 
 function arraysAndObjects (element) {
