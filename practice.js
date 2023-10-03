@@ -41,7 +41,6 @@ function operators(element) {
 }
 
 function controlStructures(element) {
-  console.log(yeet);
   try {
     console.log(element.children[1].textContent);
     while (true) {
@@ -68,16 +67,18 @@ function controlStructures(element) {
 
 function arraysAndObjects(element) {
   // kod för att visa vad du lärt dig om arrays och objekt
-  console.log(['arrays', { and: 'objects' }])
-  let numbers = [1, 2, 3, 4, 5]
-  
+  let numbers = [];
+  for(let i = 0; i <= 100; i++){
+    numbers.push(i)
+  }
+  console.log(numbers)
 }
 
 function domAndEvents(element) {
   // kod för att visa vad du lärt dig om DOM och events
   // använd med html och listeners
   let newElement = document.createElement("button");
-  let newElementText = document.createElement("h1");
+  let newElementText = document.createElement("h2");
   newElementText.textContent = "pog";
   newElement.appendChild(newElementText);
   let factor = 1;
